@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="dizerOla()">diga olá!</button>
+    <button onclick="aplicarEstilo()">Aplicar estilo</button>
+    <button onclick="aumentarFonte()">Aumenta Fonte</button>
+    <button onclick="reduzirFonte()">reduzir Fonte</button>
+    <button onclick="aplicarPurple()">Aplicar cor purple</button>
+    <button onclick="aplicarRed()">Aplicar cor red</button>
+    <button onclick="aplicarBlue()">Aplicar cor blue</button>
+    <button onclick="aumentarMargens()">aumentar margens</button>
+    <button onclick="reduzirMargens()">reduzir margens</button>
+    <h1>Etec sales Gomes</h1>
+
+    <script>
+
+        let font_size = 12;
+        let titulo = document.querySelector('h1');
+        let mar_gin = 3;
+
+        function aplicarPurple(){
+            titulo.style.backgroundColor = 'purple';
+        }
+
+        function aplicarRed(){
+            titulo.style.backgroundColor = 'red';
+        }        
+        
+        function aplicarBlue(){
+            titulo.style.backgroundColor = 'blue';
+        }
+
+        function aumentarMargens(){
+            mar_gin = mar_gin + 10;
+            aplicarMargin();
+        }
+
+        function reduzirMargens(){
+            mar_gin = mar_gin - 10;
+            aplicarMargin();
+        }
+
+        function aplicarMargin(){
+            titulo.style.margin = `${mar_gin}px`;
+        }
+
+        function aumentarFonte(){
+            font_size++;
+            titulo.style.fontSize = font_size + 'px';
+            aplicarSize();
+        }
+        
+        function reduzirFonte(){
+            font_size--;
+             aplicarSize();
+
+        }
+        function aplicarSize(){
+            titulo.style.fontSize = `${font_size}px`; 
+        }
+
+        function dizerOla(){
+            alert('olá!!!');
+        };
+
+        function aplicarEstilo(){
+            let titulo = document.querySelector('h1');
+        titulo.style.fontSize = '64px';
+        titulo.style.backgroundColor = 'white';
+        titulo.style.fontFamily =  'Comic Sans MS';
+        titulo.style.marginTop = '100px';
+            console.log(titulo);
+         
+        };
+
+     //document.body.style.backgroundColor = 'purple';
+
+       
+    </script>
+
+</body>
+</html>
