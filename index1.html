@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <button onclick="addTítulo()">Adicionar título</button>
+    <button onclick="addFoto()">Adicionar foto</button>
+
+    <div id="container"></div>
+
+    <script>
+        let titulo = document.createElement('h1'); // variavel titulo cria um h1
+        let foto = document.createElement('img'); // variavel foto cria um img
+
+        function addTítulo(){
+            titulo.innerText = 'Garoto de programa'; // innertext coloca um texto dentro do h1
+            titulo.style.color = 'white'; // css
+            titulo.style.fontSize = '64px';
+            titulo.style.backgroundColor = 'blue';
+            titulo.style.fontFamily = 'Comic Sans SM';
+            titulo.style.margin = '100px';
+            document.querySelector('#container').appendChild(titulo); // querySelector selecia o id da div, appendChild cria um "filho" para a div (variavel titulo)
+        }
+
+        function addFoto(){
+            foto.style.margin = '25%';
+            foto.setAttribute('src', 'https://pbs.twimg.com/profile_images/923270765990088705/yu9jSnDD_400x400.jpg'); // setAttribute coloca o atributo src
+            document.querySelector('#container').appendChild(foto);
+        }
+    </script>
+</body>
+</html>

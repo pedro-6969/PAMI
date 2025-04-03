@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="dizerOla()">Dizer Olá</button>
+    <button onclick="aplicarEstilo()">Aplicar Estilo</button>
+    <button onclick="aumentarFonte()">Aumentar Fonte</button>
+    <button onclick="diminuirFonte()">Diminuir Fonte</button>
+    
+    <h1>Pedro Boladao</h1>
+
+    <script>
+        let titulo = document.querySelector('h1');
+        let font_size = titulo.style.fontSize = 64;
+
+        function dizerOla(){
+            alert('Olá');
+        }
+
+        function aplicarEstilo(){
+            titulo.style.color = 'red';
+            titulo.style.backgroundColor = 'blue';
+            titulo.style.fontSize = '64px';
+        }
+
+        function aplicarSize(){
+            titulo.style.fontSize = font_size + 'px';
+        }
+
+        function aumentarFonte(){
+            font_size++;
+            aplicarSize();
+        }
+
+        function diminuirFonte(){
+            font_size--;
+            aplicarSize();
+        }
+    </script>
+</body>
+</html>

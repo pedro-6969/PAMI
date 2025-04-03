@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="dizerOla()">Diga Olá!</button>
+
+    <button onclick="aplicarEstilo()">Aplicar Estilo</button>
+
+    <button onclick="aumentarFonte()">Aumentar Fonte</button>
+
+    <button onclick="reduzirFonte()">Reduzir Fonte</button>
+
+    <!--  -->
+
+    <button onclick="aplicarPurple()">Aplicar cor Purple</button>
+
+    <button onclick="aplicarRed()">Aplicar cor Red</button>
+
+    <button onclick="aplicarBlue()">Aplicar cor Blue</button>
+
+    <button onclick="aumentarMargens()">Aumentar Margens</button>
+
+    <button  onclick="reduzirMargens()">Reduzir Margens</button>
+
+    <h1>Etec Sales Gomes</h1>
+
+    <script>
+
+        let font_size = 64;
+        let titulo = document.querySelector('h1'); //querySelector vai buscar o h1, query significa consulta
+
+        // Exercícios
+
+        function aplicarPurple(){
+            titulo.style.color = 'purple';
+        }
+
+        function aplicarRed(){
+            titulo.style.color = 'red';
+        }
+
+        function aplicarBlue(){
+            titulo.style.color = 'blue';
+        }
+
+        let margin = 100;
+
+        function aplicarMargem(){
+            titulo.style.margin = `${margin}px`;
+        }
+
+        function aumentarMargens(){
+            margin++;
+            aplicarMargem();
+        }
+
+        function reduzirMargens(){
+            margin--;
+            aplicarMargem();
+        }
+
+        // Exercícios
+
+        function aplicarSize(){
+            titulo.style.fontSize = `${font_size}px`;
+        }
+
+        function aumentarFonte(){
+            font_size++;
+            aplicarSize();
+        }
+
+        
+        function reduzirFonte(){
+            font_size--;
+            aplicarSize();
+        }
+
+        function dizerOla(){
+            alert("Olá!")
+        }
+
+        function aplicarEstilo(){
+            titulo.style.backgroundColor = 'white';
+            titulo.style.fontSize = '64px';
+            titulo.style.fontFamily = 'Comic Sans MS';
+            titulo.style.margin = '100px';
+        }
+
+        
+
+    </script>
+    
+</body>
+</html>

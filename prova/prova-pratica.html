@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova Prática</title>
+</head>
+<body>
+    <script>
+        let vetor = [-50, -25, -10, -5, -1, 10, 20, 25, 45, 55];
+
+        let maiores = [];
+
+        let menores = [];
+
+        vetor.forEach(element => {
+            if(element>0){
+                maiores.push(element);
+            }
+            if(element<0){
+                menores.push(element);
+            }
+        });
+
+        console.log(`Existem ${maiores.length} maiores que 0 e ${menores.length} menores que 0.`)
+    </script>
+</body>
+</html>

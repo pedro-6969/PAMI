@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let segundos = 0;
+        let minutos = 0;
+        let horas = 0;
+        let dias = 0;
+        let timer = document.createElement('h1'); // cria um elemento h1 dentro da variavel timer
+        timer.style.fontSize = '64px';
+
+        setInterval(() => { // cria um intervalo
+            segundos++;
+            if(segundos > 59){
+                minutos++;
+                segundos = 0;
+            }
+            else if(minutos > 59){
+                horas++;
+                minutos = 0;
+            }
+            else if(horas > 23){
+                dias++;
+                horas = 0;
+            }
+            timer.innerText = dias + ':' + horas + ':' + minutos + ':' + segundos;
+        }, 1000); // a cada 1000 ms
+
+        document.querySelector('body').appendChild(timer); // cria um "filho" dentro do body(variavel timer)
+    </script>
+</body>
+</html>
