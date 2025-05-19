@@ -1,0 +1,27 @@
+<script>
+    let acesstoken = {
+        email: 'horse@hotmail.com',
+        token: -'1214334353563'
+    }
+
+    localStorage.setItem('token', JSON.stringify(acesstoken));
+
+    let pessoa={
+        nome: 'severino',
+        sobrenome: 'Silva',
+        idade: 10,
+        altura: '1,5cm',
+        peso: '70kg',
+        telefone: [
+            9999999999,
+            12121212,
+            3435354
+        ]
+    }
+
+    localStorage.setItem('pessoa', JSON.stringify(pessoa));
+    localStorage.removeItem('token');
+
+    let aluno = JSON.parse(localStorage.getItem('pessoa'));
+    console.log(aluno);
+</script>
