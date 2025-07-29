@@ -1,0 +1,84 @@
+<script>
+                const veiculos = [
+            {
+                nome: "Fusca",
+                ano: 1984,
+                preco: 15000,
+                modelo: "Standard",
+                combustivel: "Gasolina"
+            },
+            {
+                nome: "Gol",
+                ano: 2020,
+                preco: 45000,
+                modelo: "1.0",
+                combustivel: "Etanol"
+            },
+            {
+                nome: "Civic",
+                ano: 2025,
+                preco: 95000,
+                modelo: "EXL",
+            combustivel: "Gasolina"
+            },
+            {
+            nome: "Onix",
+            ano: 2018,
+            preco: 35000,
+            modelo: "Joy",
+            combustivel: "Flex"
+            },
+            {
+            nome: "Hilux",
+            ano: 2022,
+            preco: 180000,
+            modelo: "SRV",
+            combustivel: "Diesel"
+            },
+            {
+            nome: "Fiesta",
+            ano: 2017,
+            preco: 38000,
+            modelo: "SE",
+            combustivel: "Flex"
+            },
+            {
+            nome: "Corsa",
+            ano: 2009,
+            preco: 20000,
+            modelo: "Classic",
+            combustivel: "Gasolina"
+            },
+            {
+            nome: "Argo",
+            ano: 2025,
+            preco: 42000,
+            modelo: "Drive",
+            combustivel: "Flex"
+            },
+            {
+            nome: "Tucson",
+            ano: 2022,
+            preco: 120000,
+            modelo: "GLS",
+            combustivel: "Flex"
+            },
+            {
+            nome: "Jeep Compass",
+            ano: 2023,
+            preco: 140000,
+            modelo: "Longitude",
+            combustivel: "Diesel"
+            }
+            ];
+
+            let veiculos_seminovos = veiculos.filter(veiculo => veiculo.ano >2000 && veiculo.ano <=2024);
+           let veiculos_novos = veiculos.filter(veiculo => veiculo.ano >=2025)
+            let veiculos_classicos = veiculos.filter(veiculo => veiculo.ano <=2000)
+            let veiculos_gasolina = v;
+            let veiculo_baixo_valor; // <=10k
+
+            console.log(veiculos_seminovos);
+            console.log(veiculos_novos)
+            console.log(veiculos_classicos)
+</script>
