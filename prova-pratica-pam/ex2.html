@@ -1,0 +1,16 @@
+<script>
+    let map = new Map();
+
+    map.set('nome', 'Pedro');
+    map.set('idade', 16);
+    map.set('salario', 10.00);
+
+    for(let [key, value] of map.entries()){
+        console.log(`${key}: ${value}`);
+    }
+
+    console.log(map.has('idade'));
+    
+    map.delete('salario');
+    console.log(map);
+</script>
